@@ -1,13 +1,348 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Google fonts imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600&display=swap');
+
+/* Header */
+
+header {
+    background: url(images/sea.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 969px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-container {
+    background-color: #D2E3E5;
+}
+
+.brand-logo {
+    margin-left: 2%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.globe-logo {
+    width: auto;
+    height: 1.375em;
+    vertical-align: text-bottom;
+    padding-right: 7px;
+}
+
+.sidenav {
+    width: 275px !important;
+}
+
+.inline-icon-sidenav {
+    /* padding-left: 15px; */
+    vertical-align: bottom;
+    font-size: 29px !important;
+}
+
+nav .sidenav-trigger {
+    float: right; /* hamburger menu floated to the right of navbar */
+}
+
+.sidenav-container {
+    margin-top: 15px;
+}
+
+.sidenav-links {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    padding-left: 8px;
+    color: black;
+}
+
+.navbar-link { 
+    border-right: solid 1px black;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-link-last {
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.link-divider {
+    border: 1px solid black;
+}
+
+.broaden, .section {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+
+.rotate {
+    animation: rotation 7s infinite linear;
+    animation-delay: 0.5s;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.intro, .broaden h3 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+}
+
+hr {
+    border: 1px solid white;
+}
+
+/* fix this */
+
+.btn-floating {
+    background-color: black;
+}
+
+.btn-floating:hover {
+    background-color: maroon;
+}
+
+.valign-wrapper {
+    flex-wrap: wrap; /* This is used to prevent an inline display on smaller screens */
+}
+
+/* Testimonial section */
+
+.testimonial {
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 0 0 3px #FF0000;
+    padding-bottom: 30px;
+}
+
+.carousel {
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.my-avatars {
+    /* make a square container */
+    width: 150px;
+    height: 150px;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* center the image vertically and horizontally */
+    background-position: top center;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+
+    margin: 15px auto;
+}
+
+.testimonial-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px !important;
+}
+
+.testimonial-text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 27px !important;
+}
+
+/* Start learning button */
+
+.start-learning {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.start-learning a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+/* Footer section */
+
+footer {
+    margin-top: 40px;
+}
+
+footer h5, p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media li {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.social-media span {
+    padding-left: 12px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Not found section */
+
+.inline-icon {
+    padding-left: 15px;
+    vertical-align: bottom;
+    font-size: 43px !important;
+}
+
+.back-home {
+    padding-top: 20px;
+}
+
+/* Explore section (app) */
+
+.explore-container {
+    margin-top: 30px;
+}
+
+.continent-select {
+    padding-top: 25px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 45px;
+    color: white;
+}
+
+.continent-divider {
+    border: 1px solid black;
+    margin-top: 40px;
+}
+
+.row .continent-container {
+    padding: 40px 40px;
+}
+
+.continent-name-container {
+    margin-top: 25px;
+}
+
+.btn-continent {
+    border-radius: 15px;
+    background-color: black;
+}
+
+.btn-continent:hover {
+    background-color: darkgreen;
+}
+
+.continent-icons {
+    padding-right: 13px;
+    vertical-align: top;
+}
+
+.continent-name {
+    font-size: 35px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 600;
+}
+
+/* Countries section */
+
+.explore-continent-wrapper {
+    background: url(images/globes-background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.countries .row {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.countries .row::after {
+    content: '';
+    flex: auto;
+}
+
+.countries .row .col {
+    padding: 20px 40px;
+}
+
+.country-name {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 12px;
+    color: white;
+}
+
+.country-info {
+    margin-top: -5.2px;
+    padding: 2px 16px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.country-info ul li p {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 17.5px;
+}
+
+/* Media queries for mobile/tablet devices */
+
+@media screen and (max-width: 600px) {
+    .navbar-container {
+        width: 100% !important; /* 100% navbar on small screens */
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    nav .brand-logo {
+        left: 0% !important;
+        font-size: 24px !important;             /* Prevents centering of logo on medium/small screens */
+        transform: translateX(20%) !important;
+    }
+
+    .globe-logo {
+        padding-right: 15px;
+    }
+
+    .intro, .broaden h3 {
+        font-size: 28px;
+    }
+
+    .rotate {
+        margin-top: 40px;
+    }
+
+    .testimonial {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    .my-avatars {
+        margin: 8px auto;
+    }
+
+    .testimonial-name {
+        font-size: 13px !important;
+    }
+
+    .testimonial-text {
+        font-size: 14px !important;
+    }
+
+    .countries .row .col {
+        padding: 30px 30px !important;
+    }
+
+    .country-info {
+        height: 245px;
+        overflow-y: scroll;
+    }
 }
