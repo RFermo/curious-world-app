@@ -322,7 +322,7 @@ footer h5, p {
     nav .brand-logo {
         left: 0% !important;
         font-size: 24px !important;             /* Prevents centering of logo on medium/small screens */
-        transform: translateX(35%) !important;
+        transform: translateX(42%) !important;
     }
 
     /* .globe-logo {
