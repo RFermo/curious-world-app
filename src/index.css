@@ -321,7 +321,7 @@ footer h5, p {
     }
 
     .globe-logo {
-        padding-right: 15px;
+        padding-right: 25px;
     }
 
     .intro, .broaden h3 {
@@ -358,7 +358,7 @@ footer h5, p {
         overflow-y: scroll;
     }
 
-    .explore-continent-wrapper::after {
-        position: fixed;
+    .explore-continent-wrapper {
+        background: #0F3D43 no-repeat center center fixed;
     }
 }
