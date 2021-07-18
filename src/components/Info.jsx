@@ -30,10 +30,15 @@ const Info = () => {
                         <h3 className="white-text center-align">Broaden your knowledge by learning things about every country in the world.</h3>
                     </Col>
 
-                    <Col s={12} l={5} m={7} push="m1" key={1000}>
-                        {franceData.map((country) => {
+                    <Col className="hide-on-med-and-up before-country" s={12}>
+                        <hr className="hide-on-med-and-up" />
+                    </Col>
+
+                    <Col s={12} l={5} m={7} push="m1">
+                        {franceData.map((country, index) => {
                             return (
                                 <CountryCard
+                                    key={index}
                                     name={country.name}
                                     flag={country.flag}
                                     continent={country.region}
