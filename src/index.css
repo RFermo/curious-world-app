@@ -4,6 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600&display=swap');
 
+html {
+    height: 100%; /* This prevents small gap on bottom of page. */
+}
+
+body {
+    min-height: 100%;
+}
+
 /* Header */
 
 header {
@@ -292,6 +300,10 @@ footer h5, p {
     font-size: 17.5px;
 }
 
+.input-container {
+    margin-top: 30px;
+}
+
 /* Media queries for mobile/tablet devices */
 
 @media screen and (max-width: 600px) {
@@ -344,5 +356,9 @@ footer h5, p {
     .country-info {
         height: 245px;
         overflow-y: scroll;
+    }
+
+    .explore-continent-wrapper::after {
+        position: fixed;
     }
 }

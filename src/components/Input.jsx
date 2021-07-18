@@ -1,6 +1,6 @@
 const Input = ({searchQuery, setSearchQuery}) => {
     return (
-        <div className="row">
+        <div className="row input-container">
             <div className="col s12 l6 offset-l3">
                 <div className="input-field">
                     <i className="material-icons prefix white-text">search</i>
