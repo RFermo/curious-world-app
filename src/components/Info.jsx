@@ -5,7 +5,7 @@ import {Row, Col} from "react-materialize";
 
 const Info = () => {
 
-    const url = "https://restcountries.eu/rest/v2/name/france";
+    const url = "https://restcountries.com/v2/name/france";
     const {continentData: franceData} = useFetch(url);
 
     return (

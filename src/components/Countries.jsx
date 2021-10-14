@@ -11,7 +11,7 @@ import useFetch from "./useFetch";
 const Countries = () => {
 
     const {id} = useParams();
-    const url = "https://restcountries.eu/rest/v2/region/" + id + "?fields=name;capital;flag;region;subregion;population;area;languages";
+    const url = "https://restcountries.com/v2/region/" + id + "?fields=name,capital,flag,region,subregion,population,area,languages";
 
     const filterCountries = (countries, query) => {
         if (!query) {
