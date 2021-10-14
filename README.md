@@ -1,7 +1,3 @@
-# Note: The API from which I fetched the data of the countries is down.
-
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
